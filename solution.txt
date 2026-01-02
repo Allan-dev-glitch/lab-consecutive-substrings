@@ -1,2 +1,18 @@
 Please add your pseudocode to this file
-And a written explanation of your solution
+And a written explanation of your solutionSolution Description:
+This function, consecutiveSubstrings, generates all consecutive substrings of an input string.
+It loops through each character as a starting point, and then builds substrings by adding one character
+at a time until the end of the string. Each substring is added to a result array, which is returned
+at the end.
+
+Example:
+Input: "abc"
+Output: ["a", "ab", "abc", "b", "bc", "c"]
+
+Time Complexity: O(n^2) 
+- The outer loop runs n times, and the inner loop runs up to n times for each iteration.
+- Therefore, the total operations grow quadratically with the length of the input string.
+
+Space Complexity: O(n^2)
+- We store all consecutive substrings in an array.
+- The number of substrings is roughly n*(n+1)/2, which is quadratic.
